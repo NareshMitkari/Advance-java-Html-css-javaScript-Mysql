@@ -1,0 +1,78 @@
+<html>
+<script language="JavaScript">
+         function show()
+       {
+         var t=frm1.t1.value;
+         var len=t.length,chk=false,chk1=false;
+         if(t.charAt(0)==' ')
+          alert("Space not allowed ");
+
+          for(i=0;i<frm1.city.length;i++){
+             if(frm1.city[i].selected==true)
+          cityname=frm1.city[i].value;
+           chk=true ;
+                            }
+      alert("city="+cityname);
+     p1=frm1.pass1.value;
+     p2=frm1.pass2.value;
+
+          for(i=0;i<frm1.r1.length;i++)
+          {   if(frm1.r1[i].checked==true)
+              chk1=true;
+            }
+
+
+
+
+
+
+             if(p1==p2 && len>=4 &&chk==true && chk1==true)
+             {alert("Data Saved");}
+else
+              alert("Fill Form Correctly");
+
+              }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<body>
+<h1 style="color:red;">Fill This Form </h1><br><br><hr>
+<form name="frm1">
+Enter username-
+<input type="text" name="t1" size="20"><br><hr>
+Enter password:
+<input type="password" name="pass1" size="20"><br><hr>
+ReEnter password:
+<input type="password" name="pass2" size="20"><br><hr>
+Select Gender:
+<input type="radio" name="r1" value="male">male
+<input type="radio" name="r1" value="female">female<br><hr>
+<select name="city">
+<option value="Aurangabad">Aurangabad</option>
+<option value="pune">pune</option>
+
+<option value="mumbai">mumbai</option>
+
+<option value="chennai">chennai</option>
+</select><br><hr>
+<input type="button" value="Submit" onClick="show()">
+</form>
+
+
+
+
+
+</form>
+</body>
+</html>
