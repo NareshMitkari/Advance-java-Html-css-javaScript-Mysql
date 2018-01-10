@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+overflow-y:scroll;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+overflow-y:scroll;
+  margin: 0;
+  float:left;
+  background-color:powderblue;
+overflow:auto
+
+}
+
+
+h3{text-align:right;font-weight:normal;}
+p{text-align:right;}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+   padding: 22.5px;
+    text-align: center;
+   background-image:url('logo.BMP');
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <h1 style="color:red;">ItSolutioninfotech.com</h1>
+
+
+
+
+</div>
+
+<div class="topnav">
+  <a href="#">why Us</a>
+  <a href="#">Services</a>
+  <a href="#">News</a>
+  <a href="#">Partener</a>
+<a href="more.html">Our Team</a>
+<a href="#">Contact with us</a>
+<a href="#">Inquiry Form</a>
+<a href="#">our Client</a>
+<a href="#">more</a>
+<a href="#">product</a>
+<a href="#">live project</a>
+<a href="#">market value</a>
+<a href="#">headquarter</a>
+<a href="#">networking</a>
+<a href="#">CEO</a>
+<a href="#">careeer</a>
+<a href="#">FAQ</a>
+</div>
+
+<form method="GET" action="/servlet/UserServ"  name="frm1">
+
+<h3 style="color:red;">User ID:<input type="text" name="uid"></h3>
+<h3 style="color:red;">Password:<input type="password" name="p"></h3>
+<h3><input type="submit" value="Login"></h3>
+<h1>Create Account Here</h1>
+<h1>User Name:<input type="text" name="t1"></h1>
+<h1>Mobie no:<input type="text" name="mo"></h1>
+<h1>Email id:<input type="text" name="email"></h1>
+<h1>Password:<input type="password" name="pass"></h1>
+<h1><input type="submit"></h1>
+
+
+
+</form>
+</body>
+
+</html>
