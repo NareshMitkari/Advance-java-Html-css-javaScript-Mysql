@@ -1,0 +1,33 @@
+<html>
+<script language="JavaScript">
+setInterval("demo()",1000);
+
+
+
+
+
+function demo()
+{
+var dt=new Date();
+var h,m,s;
+
+h=dt.getHours();
+m=dt.getMinutes();
+s=dt.getSeconds();
+frm1.t1.value=h;
+frm1.t2.value=m;
+frm1.t3.value=s;
+}
+
+</script>
+<body>
+<h1><font color="red">Digital clock</font></h1>
+<form name="frm1">
+<input type="text" name="t1" size="3">
+<input type="text" name="t2" size="3">
+<input type="text" name="t3" size="3">
+<input type="button"value="press" onClick="fun()">
+</body>
+
+
+</html>
